@@ -1,19 +1,20 @@
-package pl.kwi.main;
+package pl.kwi.clients;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
+import pl.kwi.clients.Client;
 import pl.kwi.toys.Toy;
 
-public class MainTest {
+public class ClientTest {
 	
-	private Main main;
+	private Client main;
 
 	@Before
 	public void setUp() throws Exception {
-		main = new Main();
+		main = new Client();
 	}
 
 	@Test

@@ -1,36 +1,37 @@
-package pl.kwi.main;
+package pl.kwi.clients;
 
 import junit.framework.Assert;
 
 import org.junit.Before;
 import org.junit.Test;
 
+import pl.kwi.clients.Client;
 import pl.kwi.toys.Toy;
 
-public class MainTest {
+public class ClientTest {
 	
-	private Main main;
+	private Client client;
 
 	@Before
 	public void setUp() throws Exception {
-		main = new Main();
+		client = new Client();
 	}
 	
 	@Test
 	public void createBearToy(){
-		Toy toy = main.createBearToy();
+		Toy toy = client.createBearToy();
 		Assert.assertEquals(Toy.BEAR, toy.getName());
 	}
 	
 	@Test
 	public void createCarToy(){
-		Toy toy = main.createCarToy();
+		Toy toy = client.createCarToy();
 		Assert.assertEquals(Toy.CAR, toy.getName());
 	}
 	
 	@Test
 	public void createDollToy(){
-		Toy toy = main.createDollToy();
+		Toy toy = client.createDollToy();
 		Assert.assertEquals(Toy.DOLL, toy.getName());
 	}
 

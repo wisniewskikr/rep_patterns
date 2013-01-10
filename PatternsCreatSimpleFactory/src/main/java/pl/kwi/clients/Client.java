@@ -1,9 +1,9 @@
-package pl.kwi.main;
+package pl.kwi.clients;
 
 import pl.kwi.factories.ToyFactory;
 import pl.kwi.toys.Toy;
 
-public class Main {
+public class Client {
 		
 	public Toy createBearToy(){
 		return ToyFactory.createToy(Toy.BEAR);

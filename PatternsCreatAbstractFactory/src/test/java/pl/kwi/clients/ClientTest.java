@@ -1,4 +1,4 @@
-package pl.kwi.main;
+package pl.kwi.clients;
 
 import static org.junit.Assert.*;
 
@@ -7,22 +7,23 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
+import pl.kwi.clients.Client;
 import pl.kwi.factories.AbstractFactory;
 import pl.kwi.toys.Toy;
 
-public class MainTest {
+public class ClientTest {
 	
-	private Main main;
+	private Client client;
 
 	@Before
 	public void setUp() throws Exception {
-		main = new Main();
+		client = new Client();
 	}
 
 	@Test
 	public void getToysFromPoland(){
 		
-		List<Toy> toys = main.getToysFromPoland();
+		List<Toy> toys = client.getToysFromPoland();
 		Toy toy;
 		
 		toy = toys.get(0);
@@ -42,7 +43,7 @@ public class MainTest {
 	@Test
 	public void getToysFromGermany(){
 		
-		List<Toy> toys = main.getToysFromGermany();
+		List<Toy> toys = client.getToysFromGermany();
 		Toy toy;
 		
 		toy = toys.get(0);
@@ -62,7 +63,7 @@ public class MainTest {
 	@Test
 	public void getToysFromEngland(){
 		
-		List<Toy> toys = main.getToysFromEngland();
+		List<Toy> toys = client.getToysFromEngland();
 		Toy toy;
 		
 		toy = toys.get(0);

@@ -1,25 +1,26 @@
-package pl.kwi.main;
+package pl.kwi.clients;
 
 import static junit.framework.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
+import pl.kwi.clients.Client;
 import pl.kwi.toys.Toy;
 
-public class MainTest {
+public class ClientTest {
 	
-	private Main main;
+	private Client client;
 
 	@Before
 	public void setUp() throws Exception {
-		main = new Main();
+		client = new Client();
 	}
 
 	@Test
 	public void getBearToy(){
 		
-		Toy toy1 = main.getBearToy();
-		Toy toy2 = main.getBearToy();
+		Toy toy1 = client.getBearToy();
+		Toy toy2 = client.getBearToy();
 		
 		assertEquals(toy1, toy2);
 		
@@ -28,8 +29,8 @@ public class MainTest {
 	@Test
 	public void getCarToy(){
 		
-		Toy toy1 = main.getCarToy();
-		Toy toy2 = main.getCarToy();
+		Toy toy1 = client.getCarToy();
+		Toy toy2 = client.getCarToy();
 		
 		assertEquals(toy1, toy2);
 		
@@ -38,8 +39,8 @@ public class MainTest {
 	@Test
 	public void getDollToy(){
 		
-		Toy toy1 = main.getDollToy();
-		Toy toy2 = main.getDollToy();
+		Toy toy1 = client.getDollToy();
+		Toy toy2 = client.getDollToy();
 		
 		assertEquals(toy1, toy2);
 		

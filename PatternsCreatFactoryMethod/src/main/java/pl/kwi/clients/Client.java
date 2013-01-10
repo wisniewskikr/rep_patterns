@@ -1,4 +1,4 @@
-package pl.kwi.main;
+package pl.kwi.clients;
 
 import pl.kwi.factories.AbstrToyFactory;
 import pl.kwi.factories.BearToyFactory;
@@ -6,7 +6,7 @@ import pl.kwi.factories.CarToyFactory;
 import pl.kwi.factories.DollToyFactory;
 import pl.kwi.packages.Package;
 
-public class Main {
+public class Client {
 	
 	public Package getPackageWithBear(){
 		

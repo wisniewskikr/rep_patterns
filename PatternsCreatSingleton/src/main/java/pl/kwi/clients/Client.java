@@ -1,11 +1,11 @@
-package pl.kwi.main;
+package pl.kwi.clients;
 
 import pl.kwi.singletons.BearToySingleton;
 import pl.kwi.singletons.CarToySingleton;
 import pl.kwi.singletons.DollToySingleton;
 import pl.kwi.toys.Toy;
 
-public class Main {
+public class Client {
 		
 	public Toy getBearToy(){
 		return BearToySingleton.getInstance();

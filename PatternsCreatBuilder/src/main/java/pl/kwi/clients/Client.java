@@ -1,4 +1,4 @@
-package pl.kwi.main;
+package pl.kwi.clients;
 
 import pl.kwi.builders.BearToyBuilder;
 import pl.kwi.builders.CarToyBuilder;
@@ -6,7 +6,7 @@ import pl.kwi.builders.DollToyBuilder;
 import pl.kwi.directors.ToyDirector;
 import pl.kwi.toys.Toy;
 
-public class Main {
+public class Client {
 		
 	public Toy createBearToy(){
 		

@@ -1,4 +1,4 @@
-package pl.kwi.main;
+package pl.kwi.clients;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 import pl.kwi.factories.AbstractFactory;
 import pl.kwi.toys.Toy;
 
-public class Main {
+public class Client {
 		
 	public List<Toy> getToysFromPoland(){
 		
