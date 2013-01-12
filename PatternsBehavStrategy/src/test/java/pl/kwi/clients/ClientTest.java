@@ -20,19 +20,19 @@ public class ClientTest {
 	}
 	
 	@Test
-	public void paintToyBlue(){
+	public void addLabelToToy(){
 		Toy toy = new BearToy();
-		client.paintToyBlue(toy);
+		client.addLabelToToy(toy);
 		
-		Assert.assertEquals("blue", toy.getProperty("color"));
+		Assert.assertEquals("This is label for: Bear", toy.getProperty("label"));
 	}
 	
 	@Test
-	public void paintToyRed(){
+	public void addDescriptionToToy(){
 		Toy toy = new CarToy();
-		client.paintToyRed(toy);
+		client.addDescriptionToToy(toy);
 		
-		Assert.assertEquals("red", toy.getProperty("color"));
+		Assert.assertEquals("This is description for: Car", toy.getProperty("description"));
 	}
 
 }

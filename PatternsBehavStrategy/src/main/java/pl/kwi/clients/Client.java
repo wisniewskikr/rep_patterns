@@ -1,19 +1,19 @@
 package pl.kwi.clients;
 
 import pl.kwi.contexts.Context;
-import pl.kwi.strategies.BlueColourStrategy;
-import pl.kwi.strategies.RedColourStrategy;
+import pl.kwi.strategies.LabelStrategy;
+import pl.kwi.strategies.DescriptionStrategy;
 import pl.kwi.toys.Toy;
 
 public class Client {
 		
-	public void paintToyBlue(Toy toy){
-		Context context = new Context(new BlueColourStrategy());
+	public void addLabelToToy(Toy toy){
+		Context context = new Context(new LabelStrategy());
 		context.executeStrategy(toy);
 	}
 	
-	public void paintToyRed(Toy toy){
-		Context context = new Context(new RedColourStrategy());
+	public void addDescriptionToToy(Toy toy){
+		Context context = new Context(new DescriptionStrategy());
 		context.executeStrategy(toy);
 	}
 
